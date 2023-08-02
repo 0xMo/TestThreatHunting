@@ -1,0 +1,3 @@
+Command:
+
+mshta.exe "about:<hta:application><script language="VBScript">Close(Execute("CreateObject(""Wscript.Shell"").Run%20""powershell.exe"""))</script>'"
