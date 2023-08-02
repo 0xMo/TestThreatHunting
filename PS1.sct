@@ -20,7 +20,7 @@
 
 	function Exec()
 	{
-		var r = new ActiveXObject("WScript.Shell").Run("wmic.exe process call create powershell.exe");
+		var r = new ActiveXObject("WScript.Shell").Run("powershell.exe");
 	}
 
 ]]>
