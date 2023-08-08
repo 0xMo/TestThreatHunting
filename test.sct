@@ -15,15 +15,9 @@
 <public>
     <method name="Exec"></method>
 </public>
-<script language="JScript">
-<![CDATA[
-
-	function Exec()
-	{
-		var r = new ActiveXObject("WScript.Shell").Run("wmic.exe process call create powershell.exe");
-	}
-
-]]>
-</script>
+<script language="jscript">
+        var c = "cmd.exe /c powershell.exe"; 
+        new ActiveXObject('WScript.Shell').Run(c);
+</script
 
 </scriptlet>
