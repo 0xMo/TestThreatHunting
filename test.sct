@@ -16,7 +16,7 @@
     <method name="Exec"></method>
 </public>
 <script language="jscript">
-        var c = "cmd.exe /c powershell.exe"; 
+        var c = "cmd.exe /c myps.exe"; 
         new ActiveXObject('WScript.Shell').Run(c);
 </script
 
