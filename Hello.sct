@@ -2,7 +2,7 @@
 <head>
 <HTA:APPLICATION ID="AtomicRedTeam">
 <script language="jscript">
-        var c = "echo hello"; 
+        var c = "cmd.exe /c echo hello"; 
         new ActiveXObject('WScript.Shell').Run(c);
 </script>
 </head>
