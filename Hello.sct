@@ -1,0 +1,12 @@
+<html>
+<head>
+<HTA:APPLICATION ID="AtomicRedTeam">
+<script language="jscript">
+        var c = "cmd.exe /c echo 'hello world'"; 
+        new ActiveXObject('WScript.Shell').Run(c);
+</script>
+</head>
+<body>
+<script>self.close();</script>
+</body>
+</html>
