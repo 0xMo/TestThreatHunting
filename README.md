@@ -6,7 +6,7 @@ Test the following:
   - The will run a script from a URL to run calculator.
 - Save the content of the file "**MaliciousHTA.hta**" & "**m.hta**" locally and double click it to run a calculator.
   - Both contains VBScript but different code written to run a program.
-- Save the content of the file "**JS_URL**" and double click it to run a acript from a URL tthat will run a calculator.
+- Save the content of the file "**JS_URL**" and double click it to run a script from a URL that will run a calculator.
 
 # Files
 <h3>What is SCT file extension</h3>
@@ -20,18 +20,25 @@ HTML Application (HTA) files have the file extension hta.HTA's are standalone ap
 <h3>List of files</h3>
 
 - MaliciousHTA.hta:
-  - This files contains a HTML code with VBScript saved in HTA file that will run a calculator.
+  - This files contains a HTML code with **VBScript** saved in HTA file that will run a calculator.
 - JS_URL.hta:
-  - contains an HTML code with JavaScript that will run a script from a URL.
+  - contains an HTML code with **JavaScript** that will run a script from a URL.
 - m.hta:
-  - This files contains a HTML code with VBScript saved in HTA file that will run a calculator.
+  - This files contains a HTML code with **VBScript** saved in HTA file that will run a calculator.
 - test1.hta:
-  - An HTML code conatins VBScript save in HTA file that will run a calculator sing the Wscript.Shell.
+  - An HTML code conatins **VBScript** save in HTA file that will run a calculator sing the Wscript.Shell.
 - test2.hta:
-  - An HTML code conatins VBScript save in HTA file that will run a PowerShell command to download a text file.
+  - An HTML code conatins **VBScript** save in HTA file that will run a PowerShell command to download a text file.
 
 - Hello.sct:
-  - This files contains a HTML code saved in SCT file that will run a calculator.
+  - This files contains a HTML code with a **JScript** saved in SCT file that was trying to run a command in the cmd to print "hello". (wasnt successful)
 - PS1.sct:
-  - Contains a XML code with JScript that will run calculator.
-- 
+  - Contains a XML code with **JScript** that will run calculator. (working)
+- PS2.sct:
+  - Contains a XML code with **JScript** that will run PowerShell.
+- hello1.sct:
+  - Contains a XML code with **JScript** that I was trying to print hello in the cmd terminal but didnt work.
+- payload.sct:
+  - Contains a XML code with **JScript** that will run a PowerShell command to download a text file.
+- test.sct:
+  - Contains a XML code with **JScript** that will run a PowerShell with nameing "myps.exe". This is specifically designed for test purposes.
