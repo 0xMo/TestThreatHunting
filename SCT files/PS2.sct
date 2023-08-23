@@ -1,12 +1,20 @@
-<html>
-<head>
-<HTA:APPLICATION ID="AtomicRedTeam">
+<?XML version="1.0"?>
+<scriptlet>
+<registration
+    description="Bandit"
+    progid="Bandit"
+    version="1.00"
+    classid="{AAAA1111-0000-0000-0000-0000FEEDACDC}"
+	>
+
+</registration>
+
+<public>
+    <method name="Exec"></method>
+</public>
 <script language="jscript">
         var c = "cmd.exe /c powershell.exe"; 
         new ActiveXObject('WScript.Shell').Run(c);
 </script>
-</head>
-<body>
-<script>self.close();</script>
-</body>
-</html>
+</scriptlet>
+
